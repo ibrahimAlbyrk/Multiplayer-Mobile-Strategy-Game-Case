@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Photon.Pun;
+using Photon.Realtime;
 
 namespace Core.Runtime.NETWORK.Managers
 {
@@ -6,9 +8,17 @@ namespace Core.Runtime.NETWORK.Managers
     
     public class NetworkManager : PunCallbacksSingleton<NetworkManager>
     {
+        public static event Action OnClientJoinedLobby;
+        
         public override void OnConnectedToMaster()
         {
-            Debug.Log("Connect to Server");
+            PhotonNetwork.JoinLobby(TypedLobby.Default);
+        }
+
+        public override void OnJoinedLobby()
+        {
+            base.OnJoinedLobby();
+            OnClientJoinedLobby?.Invoke();
         }
     }
 }

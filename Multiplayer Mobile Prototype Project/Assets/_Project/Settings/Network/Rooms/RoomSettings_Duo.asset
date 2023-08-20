@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d560217ea2b4e3383ec8472167e2323, type: 3}
-  m_Name: RoomSettings_Default
+  m_Name: RoomSettings_Duo
   m_EditorClassIdentifier: 
-  <MaxPlayerCount>k__BackingField: 5
+  <MaxPlayerCount>k__BackingField: 1
