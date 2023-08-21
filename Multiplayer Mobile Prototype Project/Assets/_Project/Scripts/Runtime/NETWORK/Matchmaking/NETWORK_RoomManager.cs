@@ -19,7 +19,9 @@ namespace Core.Runtime.NETWORK.Matchmaking
 
         public void StartMatchmaking()
         {
-            JoinRandomWithMatching(_roomSettings.MaxPlayerCount);
+            var roomProperties = new Hashtable { { "MatchLevel", 1 } };
+            
+            JoinRandomWithMatching(roomProperties, _roomSettings.MaxPlayerCount);
         }
         
         public void SetVisibleCurrentRoom(bool visible)
@@ -73,26 +75,11 @@ namespace Core.Runtime.NETWORK.Matchmaking
             PhotonNetwork.CreateRoom(null, roomOptions, TypedLobby.Default);
         }
 
-        public void JoinRandomWithMatching(int expectedMaxPlayers = 0)
+        public void JoinRandomWithMatching(Hashtable matchHashtable, int expectedMaxPlayers = 0)
         {
             if (!HasConnected()) return;
             
-            PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable
-            {
-                {"MatchLevel", 1}
-            });
-
-            PhotonNetwork.SetPlayerCustomProperties(PhotonNetwork.LocalPlayer.CustomProperties);
-
-            var playerMatchLevel = (int)PhotonNetwork.LocalPlayer.CustomProperties["MatchLevel"];
-
-            var roomOptions = new RoomOptions
-            {
-                CustomRoomProperties = new Hashtable { { "MatchLevel", playerMatchLevel } },
-                CustomRoomPropertiesForLobby = new[] { "MatchLevel" }
-            };
-
-            PhotonNetwork.JoinRandomRoom(roomOptions.CustomRoomProperties, (byte)expectedMaxPlayers);
+            PhotonNetwork.JoinRandomRoom(matchHashtable, (byte)expectedMaxPlayers);
         }
 
         public void JoinRoom()
@@ -126,27 +113,16 @@ namespace Core.Runtime.NETWORK.Matchmaking
 
         public override void OnCreatedRoom()
         {
-            Debug.Log("Room Created");
-
             OnClientCreatedRoom?.Invoke();
-        }
-
-        public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
-        {
-            print("entered room, room manager");
         }
 
         public override void OnJoinedRoom()
         {
-            Debug.Log("Joined To Room");
-
             OnClientJoinedRoom?.Invoke();
         }
 
         public override void OnLeftRoom()
         {
-            Debug.Log("Left To Room");
-
             OnClientExitedRoom?.Invoke();
         }
 

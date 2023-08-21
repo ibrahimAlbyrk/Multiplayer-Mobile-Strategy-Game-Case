@@ -1,0 +1,787 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.1f1 (f18e0c1b5784) revision 15830540'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.23516) 64bit Professional' Language: 'en' Physical Memory: 16253 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Projects/Unity Git Projects/Multiplayer-Mobile-Strategy-Game-Case/Multiplayer Mobile Prototype Project
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+56159
+Successfully changed project path to: C:/Projects/Unity Git Projects/Multiplayer-Mobile-Strategy-Game-Case/Multiplayer Mobile Prototype Project
+C:/Projects/Unity Git Projects/Multiplayer-Mobile-Strategy-Game-Case/Multiplayer Mobile Prototype Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28896] Host "[IP] 192.168.1.217 [Port] 0 [Flags] 2 [Guid] 2353317627 [EditorId] 2353317627 [Version] 1048832 [Id] WindowsEditor(7,Term5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [28896] Host "[IP] 192.168.1.217 [Port] 0 [Flags] 2 [Guid] 2353317627 [EditorId] 2353317627 [Version] 1048832 [Id] WindowsEditor(7,Term5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 222.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projects/Unity Git Projects/Multiplayer-Mobile-Strategy-Game-Case/Multiplayer Mobile Prototype Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f03)
+    Vendor:   NVIDIA
+    VRAM:     12075 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.019665 seconds.
+- Loaded All Assemblies, in  0.888 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 420 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.816 seconds
+Domain Reload Profiling: 1701ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (185ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (521ms)
+		LoadAssemblies (94ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (513ms)
+			TypeCache.Refresh (512ms)
+				TypeCache.ScanAssembly (285ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (816ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (758ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (601ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projects\Unity Git Projects\Multiplayer-Mobile-Strategy-Game-Case\Multiplayer Mobile Prototype Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projects\Unity Git Projects\Multiplayer-Mobile-Strategy-Game-Case\Multiplayer Mobile Prototype Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.761 seconds
+Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.845 seconds
+Domain Reload Profiling: 4601ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (3478ms)
+		LoadAssemblies (3201ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (361ms)
+			TypeCache.Refresh (335ms)
+				TypeCache.ScanAssembly (311ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (845ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (651ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (48ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 6.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (59.4 KB). Loaded Objects now: 3823.
+Memory consumption went from 142.7 MB to 142.7 MB.
+Total: 6.433700 ms (FindLiveObjects: 0.619600 ms CreateObjectMapping: 0.460600 ms MarkObjects: 5.033500 ms  DeleteObjects: 0.318300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20541.949887 seconds.
+  path: Assets/Suntail Village/Textures/Terrain/Tile_1_AlbedoSmoothness.png
+  artifactKey: Guid(2b47f2696e9ccfa4cac3f18a1e969cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Terrain/Tile_1_AlbedoSmoothness.png using Guid(2b47f2696e9ccfa4cac3f18a1e969cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1544b31a3d26af95cd8a14d8d5624fc') in 0.063691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Suntail Village/Textures/Terrain/Mud_1_AlbedoSmoothness.png
+  artifactKey: Guid(599913b2e4ce6094abec3e56f55d4399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Terrain/Mud_1_AlbedoSmoothness.png using Guid(599913b2e4ce6094abec3e56f55d4399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86184d40ebe2cec383f558ebdae32511') in 0.019326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 135.975168 seconds.
+  path: Assets/Suntail Village/Textures/Terrain/Grass_1_Normal.png
+  artifactKey: Guid(996b9fc5732f3594f9e317cc878993ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Terrain/Grass_1_Normal.png using Guid(996b9fc5732f3594f9e317cc878993ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3bb06c364537f21fc8972ffb83dca9') in 0.029224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 27.428037 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Anvil_MetallicSmoothness.png
+  artifactKey: Guid(d8f0e50403fd2574cbf37b3755472561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Anvil_MetallicSmoothness.png using Guid(d8f0e50403fd2574cbf37b3755472561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697a84ada74e9f318398522fe4807253') in 0.015576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Anvil_Normal.png
+  artifactKey: Guid(e6e44ca0621974a4e8afe18405bedf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Anvil_Normal.png using Guid(e6e44ca0621974a4e8afe18405bedf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51be689f4ac41701793b4265636ac7f6') in 0.017950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.096371 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bag_MetallicSmoothness.png
+  artifactKey: Guid(5fa5b82bd9ee60d489707972568c9cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bag_MetallicSmoothness.png using Guid(5fa5b82bd9ee60d489707972568c9cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80f2a703ea75bae3d817d178bc38486') in 0.022133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Barrel_Albedo.png
+  artifactKey: Guid(7dfae4a0ca830ba45b53944d0a5ec3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Barrel_Albedo.png using Guid(7dfae4a0ca830ba45b53944d0a5ec3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96fb20ab3076090451e92a7dc915fb8') in 0.022460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Boiler_Normal.png
+  artifactKey: Guid(551ed4cd24ea1ec48acd774813bcf6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Boiler_Normal.png using Guid(551ed4cd24ea1ec48acd774813bcf6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfcd1c4b0eec27820885f3e54eb73ea') in 0.020968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Boat_Normal.png
+  artifactKey: Guid(6a0a6220e5adb8e4fa98661a6007813a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Boat_Normal.png using Guid(6a0a6220e5adb8e4fa98661a6007813a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6463f8ab5f66f3a111b5083cc5eb8fe2') in 0.025547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Barrel_Normal.png
+  artifactKey: Guid(afacd66707c875d4da49eb38fb51af4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Barrel_Normal.png using Guid(afacd66707c875d4da49eb38fb51af4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1c861b97f78fae170ee85e15cdd171') in 0.017959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Suntail Village/Textures/Building Modules/Boards_Normal.png
+  artifactKey: Guid(34124af92bcd44c4a9f6de7162600da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Building Modules/Boards_Normal.png using Guid(34124af92bcd44c4a9f6de7162600da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfb5fc28d82a8b7f1150adb2b965556') in 0.019889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bed_1_Normal.png
+  artifactKey: Guid(8d2bc9287f87bdd48b7459af1862204d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bed_1_Normal.png using Guid(8d2bc9287f87bdd48b7459af1862204d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d79f101c095dae54ba3e1891a58e0a9') in 0.019157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bed_1_Albedo.png
+  artifactKey: Guid(5500f70b1e2176842bb491ad1f334890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bed_1_Albedo.png using Guid(5500f70b1e2176842bb491ad1f334890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee058cf5ba47ad929fce1e8eaabbe57') in 0.021856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bonfire_Albedo.png
+  artifactKey: Guid(dd6344aa1129c34458287a157daafbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bonfire_Albedo.png using Guid(dd6344aa1129c34458287a157daafbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e5aa372e5128709f202a438a64426a') in 0.018631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bed_2_Albedo.png
+  artifactKey: Guid(51819e39604ef2b4db45b3014382c46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bed_2_Albedo.png using Guid(51819e39604ef2b4db45b3014382c46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a533f1f4c2795e7d4886a8b395b0913c') in 0.017418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bed_1_MetallicSmoothness.png
+  artifactKey: Guid(558d2e40645b6e64c9f2b8c032bd3e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bed_1_MetallicSmoothness.png using Guid(558d2e40645b6e64c9f2b8c032bd3e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045ab620e38c79940a255dcc14675d3f') in 0.011827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bed_2_MetallicSmoothness.png
+  artifactKey: Guid(51768de4aeb54d040b1c25e1f53d6bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bed_2_MetallicSmoothness.png using Guid(51768de4aeb54d040b1c25e1f53d6bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957014e976872c80faec887951b79d65') in 0.008147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.860718 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/OutlinedSquaredBox.png
+  artifactKey: Guid(c222cd02c447941edb09ecb6433229ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/OutlinedSquaredBox.png using Guid(c222cd02c447941edb09ecb6433229ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1397ec5f788c2a2bdab018b14510cdf8') in 0.035033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 54.185656 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bonfire_Normal.png
+  artifactKey: Guid(d7661a03c7bf15144a24b6b518dd330b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bonfire_Normal.png using Guid(d7661a03c7bf15144a24b6b518dd330b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51873faf9e4ae924acdb7fc60203338') in 0.021487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Suntail Village/Textures/Props/Books_1_Normal.png
+  artifactKey: Guid(358ad039ee99652479ff764f209a18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Props/Books_1_Normal.png using Guid(358ad039ee99652479ff764f209a18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e44bd22e8c64830bba7c2b365b04749') in 0.020503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Suntail Village/Textures/Props/Books_1_Albedo.png
+  artifactKey: Guid(ea906f5dc71dcbd4f8c557bcc83ec70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Props/Books_1_Albedo.png using Guid(ea906f5dc71dcbd4f8c557bcc83ec70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f0376d24155cf4b277b7d6284e6308') in 0.017830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.017610 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Books_3_MetallicSmoothness.png
+  artifactKey: Guid(20c56db4d79bfb247bed63342a97f36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Books_3_MetallicSmoothness.png using Guid(20c56db4d79bfb247bed63342a97f36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23f2f0c9608d0db1885161c7ab7f3e9') in 0.019283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Box_2_MetallicSmoothness.png
+  artifactKey: Guid(562f2e69afbe7c14b9cbba9e315c3f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Box_2_MetallicSmoothness.png using Guid(562f2e69afbe7c14b9cbba9e315c3f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b59bb0d6a9ead59cbfcf97decb8b4b') in 0.009637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxText.png
+  artifactKey: Guid(761ff1491b1f86c4d924261c553ac9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxText.png using Guid(761ff1491b1f86c4d924261c553ac9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99e8b2e54f95e84e89f08e04925102b') in 0.015778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Box_2_Albedo.png
+  artifactKey: Guid(ff68cd20dc12f604e8aa4a594c23cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Box_2_Albedo.png using Guid(ff68cd20dc12f604e8aa4a594c23cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75aa01197ad0f170d8c482000321c5c') in 0.019023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxTextHover.png
+  artifactKey: Guid(13154691f37c1884c865b54d8bd29d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxTextHover.png using Guid(13154691f37c1884c865b54d8bd29d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60190f3459fc4331d516c44bf8686554') in 0.015218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bridge_centre_Normal.png
+  artifactKey: Guid(b4d19b4594347ca49b75b66785d477d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bridge_centre_Normal.png using Guid(b4d19b4594347ca49b75b66785d477d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3767f1379bbd5ab2589d8d9d7a951ba7') in 0.023472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bridge_left_Albedo.png
+  artifactKey: Guid(6bed64f1ea9763345b90ced1d6f5345e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bridge_left_Albedo.png using Guid(6bed64f1ea9763345b90ced1d6f5345e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0373e8ae977295654d7c5aa70694e51') in 0.019266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bridge_right_Normal.png
+  artifactKey: Guid(c173aa1d72c963341836e22a2e481dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bridge_right_Normal.png using Guid(c173aa1d72c963341836e22a2e481dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713b70fdbca39ec8a0c849f01bc805c9') in 0.020925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Bridge_right_MetallicSmoothness.png
+  artifactKey: Guid(8b77771e4ab1b184da828560767207ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Bridge_right_MetallicSmoothness.png using Guid(8b77771e4ab1b184da828560767207ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96be8b327c3492afd76b5741a8611080') in 0.013662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Books_3_Normal.png
+  artifactKey: Guid(b49e5381b2fbb50479336b4ce01aa436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Books_3_Normal.png using Guid(b49e5381b2fbb50479336b4ce01aa436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bbcd9660eb2fc6b9a75bb8a9cdebd6') in 0.022787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd
+  artifactKey: Guid(49679f302ac6408697f6b9314a38985c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd using Guid(49679f302ac6408697f6b9314a38985c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d335c5da1c898b11ff384947af833aa') in 0.018534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.202550 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo.psd
+  artifactKey: Guid(c76700ea0062413d9f69409b4e9e151b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo.psd using Guid(c76700ea0062413d9f69409b4e9e151b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f5444dd514253d8eafe55600e5d8d3') in 0.016074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002989 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd
+  artifactKey: Guid(64b9fad609434c489c32b1cdf2004a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd using Guid(64b9fad609434c489c32b1cdf2004a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ad47890912d2625b37e6dc373ba37e') in 0.016151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.036588 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd
+  artifactKey: Guid(41b96614b2e6494ba995ddcd252d11ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd using Guid(41b96614b2e6494ba995ddcd252d11ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bfc7e0b6de6037a264e1fbbe6253a2') in 0.015218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003323 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidline_Light.psd
+  artifactKey: Guid(bb42b2d967d6427983c901a4ffc8ecd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidline_Light.psd using Guid(bb42b2d967d6427983c901a4ffc8ecd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023f3b90290d1d221a0d757603ca7b9b') in 0.015865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.492294 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninemail.png
+  artifactKey: Guid(d24e7e0b75e1a244bb9687d6fd4315ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninemail.png using Guid(d24e7e0b75e1a244bb9687d6fd4315ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e52fae02669ea74c3154468c1baee1f') in 0.017494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninunity.png
+  artifactKey: Guid(f9161c6c9e06dc445ada3ee16d991f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninunity.png using Guid(f9161c6c9e06dc445ada3ee16d991f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322eb6e5449213895f1d1f29ae5991ba') in 0.021023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.043295 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Carpet_1_MetallicSmoothness.png
+  artifactKey: Guid(eef95cb5d9fbf0f4faa12800db66eaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Carpet_1_MetallicSmoothness.png using Guid(eef95cb5d9fbf0f4faa12800db66eaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c77f17993f0eed3b8799f14c2fd6e4') in 0.008605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Carpet_2_Albedo.png
+  artifactKey: Guid(5d05a775a84ec76469b6db8a2c2974b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Carpet_2_Albedo.png using Guid(5d05a775a84ec76469b6db8a2c2974b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26eec89fc19476dea5fd138b9594d16') in 0.020436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Carpet_1_Normal.png
+  artifactKey: Guid(61e691c2f8f97d24f811771542d8b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Carpet_1_Normal.png using Guid(61e691c2f8f97d24f811771542d8b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bdb242f4058c415554024f6bd05c6b') in 0.019346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Cart_2_Normal.png
+  artifactKey: Guid(7f10b5898bfcbdb45ae76ccab550902e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Cart_2_Normal.png using Guid(7f10b5898bfcbdb45ae76ccab550902e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383109783c6a63b757b66c136614c920') in 0.020623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Cart_2_Albedo.png
+  artifactKey: Guid(29c35ff19cf53594988dbf82e94c693c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Cart_2_Albedo.png using Guid(29c35ff19cf53594988dbf82e94c693c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba0c40d5242c2dc704e3bf3991d593d') in 0.018886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003612 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Cart_3_MetallicSmoothness.png
+  artifactKey: Guid(1e9e3d3df48afe34bb952cba0eea341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Cart_3_MetallicSmoothness.png using Guid(1e9e3d3df48afe34bb952cba0eea341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6c01ffa8774e6dd9fbb621018a00a9') in 0.019131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Suntail Village/Textures/Props/Case_2_Albedo.png
+  artifactKey: Guid(9eea2e07485877a4ea8e7add172e0ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Props/Case_2_Albedo.png using Guid(9eea2e07485877a4ea8e7add172e0ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294ce50ef6119da50a23237d826ce80f') in 0.020479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Case_and_food_2_Normal.png
+  artifactKey: Guid(38acd5433d3712441b5a6497d2986183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Case_and_food_2_Normal.png using Guid(38acd5433d3712441b5a6497d2986183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d37d21fe8c664c92c7ebc2e04a3d52') in 0.020410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Case_and_food_2_Albedo.png
+  artifactKey: Guid(13bf0b09bc846e94b93512a3e3c720c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Case_and_food_2_Albedo.png using Guid(13bf0b09bc846e94b93512a3e3c720c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca500e16228427793f3984d5d9e5382b') in 0.016453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Suntail Village/Textures/Props/Case_1_Normal.png
+  artifactKey: Guid(dbd7b18748267204e9c845ad5339826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Props/Case_1_Normal.png using Guid(dbd7b18748267204e9c845ad5339826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177dedca03bf36edd645b9a5b7bd79db') in 0.016523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006635 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chair_1_Albedo.png
+  artifactKey: Guid(1e24acd89187e5f4faf78261d657f116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chair_1_Albedo.png using Guid(1e24acd89187e5f4faf78261d657f116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961fb022104063d25de0d5626e482737') in 0.017331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chair_1_MetallicSmoothness.png
+  artifactKey: Guid(7fa4154b0eb55cb4aa5922dc202fd9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chair_1_MetallicSmoothness.png using Guid(7fa4154b0eb55cb4aa5922dc202fd9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d40575878fece2b0eea579f970b0eb1') in 0.009493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chair_2_MetallicSmoothness.png
+  artifactKey: Guid(34ed26569ecaa4b4889bbf7766f80c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chair_2_MetallicSmoothness.png using Guid(34ed26569ecaa4b4889bbf7766f80c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8faf1653ed1f0ccd4c2257cbe034b3d') in 0.009783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.276256 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chandelier_Normal.png
+  artifactKey: Guid(4c7a892ada070db4a9971982dcce5584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chandelier_Normal.png using Guid(4c7a892ada070db4a9971982dcce5584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb805c2d047767a0bf7d877c05b0876') in 0.024488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.243286 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chest_1_Normal.png
+  artifactKey: Guid(872ed8eed0c176643b3e9c8617215793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chest_1_Normal.png using Guid(872ed8eed0c176643b3e9c8617215793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f60fa62c4e256783ace7c5e41c3880') in 0.019665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chest_2_Normal.png
+  artifactKey: Guid(8e8b99d385a40074c822b23960e70889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chest_2_Normal.png using Guid(8e8b99d385a40074c822b23960e70889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb2decef180c403ae2f21c54962fa0f') in 0.019006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Chest_3_MetallicSmoothness.png
+  artifactKey: Guid(22b533a08ab59e244ab51e691ec65444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Chest_3_MetallicSmoothness.png using Guid(22b533a08ab59e244ab51e691ec65444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e358b3434c12f589528267f13870538') in 0.021141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.342186 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_1_Box_Albedo.png
+  artifactKey: Guid(b944d21686f31b84bb5785b2c70bdc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_1_Box_Albedo.png using Guid(b944d21686f31b84bb5785b2c70bdc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d0d504b3431bac4f6dfb696ef47a81') in 0.017298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_2_Normal.png
+  artifactKey: Guid(644237761c01d3c40b4b91f9d6559a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_2_Normal.png using Guid(644237761c01d3c40b4b91f9d6559a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92416df70a2f395de144dabf5a663833') in 0.022815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_4_MetallicSmoothness.png
+  artifactKey: Guid(0ea4b086eddf5b84cb2ca5eebba5005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_4_MetallicSmoothness.png using Guid(0ea4b086eddf5b84cb2ca5eebba5005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69df18e46b95505bd74eb61c519516e1') in 0.011282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_3_Albedo.png
+  artifactKey: Guid(0c4f0c4a77e5a2b4eae6376cc6652502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_3_Albedo.png using Guid(0c4f0c4a77e5a2b4eae6376cc6652502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c69e60e06da8332dd595d75a855a828') in 0.021020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_1_Box_Normal.png
+  artifactKey: Guid(a8f3c53da3d81974bb8245f8799772cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_1_Box_Normal.png using Guid(a8f3c53da3d81974bb8245f8799772cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d2703be2f562685120cc5f004156f7') in 0.019698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Commode_4_Albedo.png
+  artifactKey: Guid(ce343aaaea61bbc4ea97b529d11dbeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Commode_4_Albedo.png using Guid(ce343aaaea61bbc4ea97b529d11dbeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf63e7b5d54b7266fb3f070710b9fab9') in 0.019288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Code/Editor/CopyIcon.png
+  artifactKey: Guid(d1228d93299ce47a8a5ac1a33513aeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Code/Editor/CopyIcon.png using Guid(d1228d93299ce47a8a5ac1a33513aeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5e1d57b8387d182cd5979265cd591f') in 0.020399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.344186 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Cupboard_1_Box_Albedo.png
+  artifactKey: Guid(78944665ee5430a469b4541529d302ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Cupboard_1_Box_Albedo.png using Guid(78944665ee5430a469b4541529d302ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0047bf35b618a70dcfd51db8379c43') in 0.021183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Suntail Village/Textures/Environment/Cupboard_1_Box_MetallicSmoothness.png
+  artifactKey: Guid(d63f9b70131d7614c8fd56c5741b2f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Suntail Village/Textures/Environment/Cupboard_1_Box_MetallicSmoothness.png using Guid(d63f9b70131d7614c8fd56c5741b2f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccefe41d12a878780ee750dcec2c5af') in 0.022756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png
+  artifactKey: Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png using Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bebcfc9eb598e87e9a3ccc41f44503') in 0.020257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Packages/com.unity.testtools.codecoverage/Editor/Icons/d_CodeCoverage.png
+  artifactKey: Guid(48e45b7f100ee4b48a02e05135e6cece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.testtools.codecoverage/Editor/Icons/d_CodeCoverage.png using Guid(48e45b7f100ee4b48a02e05135e6cece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976822905d862038df6c37e4dd4f0b0e') in 0.014674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Packages/com.unity.testtools.codecoverage/Editor/Icons/d_FolderOpened.png
+  artifactKey: Guid(663a080499383ea4e9297061febf5ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.testtools.codecoverage/Editor/Icons/d_FolderOpened.png using Guid(663a080499383ea4e9297061febf5ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5daf7068aa287abbbecb34d6fd00dd') in 0.015498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.017390 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedoverlay.png
+  artifactKey: Guid(73d124bf77e463c45942d14136745d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedoverlay.png using Guid(73d124bf77e463c45942d14136745d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa29d20d59d0feb63cba39243e29fd97') in 0.015343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003854 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconbranch@2x.png
+  artifactKey: Guid(874d8401331ede14087e8d8d486ddda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconbranch@2x.png using Guid(874d8401331ede14087e8d8d486ddda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0e2c2caf35dd75671039851abf9dfd') in 0.015917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001444 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconclosebutton.png
+  artifactKey: Guid(9cadde7a0d5f9024ab3f2cd5f6a740d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconclosebutton.png using Guid(9cadde7a0d5f9024ab3f2cd5f6a740d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dfec9355cef9dd48c70acd32902c6f3') in 0.013896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004494 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflicted@2x.png
+  artifactKey: Guid(65f0e363b74cf5845ab8c3fbc14f39ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflicted@2x.png using Guid(65f0e363b74cf5845ab8c3fbc14f39ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73f11ef3fd11b354b610d816fb2f519') in 0.014322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003823 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictresolvedoverlay.png
+  artifactKey: Guid(056ee72c467a4e24d87541d42839ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictresolvedoverlay.png using Guid(056ee72c467a4e24d87541d42839ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2781fa534d99e0868ea459b59a172ee') in 0.015351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.030775 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremote.png
+  artifactKey: Guid(23e66f7264c74424889342127f229577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremote.png using Guid(23e66f7264c74424889342127f229577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4f2495425413b856c809a38b868ce2') in 0.014553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004877 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremoteoverlay@2x.png
+  artifactKey: Guid(2cfbf6619eb047545a425e8a31732c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_icondeletedremoteoverlay@2x.png using Guid(2cfbf6619eb047545a425e8a31732c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6748d4606afcc468f610ff5960ef48f9') in 0.015080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

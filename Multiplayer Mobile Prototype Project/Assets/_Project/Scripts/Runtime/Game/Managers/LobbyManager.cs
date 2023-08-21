@@ -2,11 +2,11 @@
 using UnityEngine;
 using Photon.Realtime;
 using System.Collections;
-using Core.Runtime.NETWORK.Scene;
 
 namespace Core.Runtime.Game.Managers
 {
     using Singleton;
+    using NETWORK.Scene;
     using NETWORK.Matchmaking;
     
     public class LobbyManager : PunCallbacksSingleton<LobbyManager>
@@ -15,12 +15,7 @@ namespace Core.Runtime.Game.Managers
         
         #region Pun Callbacks
 
-        public override void OnPlayerEnteredRoom(Player newPlayer)
-        {
-            print("player entered");
-            
-            CheckStartGame();
-        }
+        public override void OnPlayerEnteredRoom(Player newPlayer) => CheckStartGame();
 
         public override void OnPlayerLeftRoom(Player otherPlayer) => CheckStartGame();
 
