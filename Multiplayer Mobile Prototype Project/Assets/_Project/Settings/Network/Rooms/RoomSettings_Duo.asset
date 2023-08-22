@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d560217ea2b4e3383ec8472167e2323, type: 3}
   m_Name: RoomSettings_Duo
   m_EditorClassIdentifier: 
-  <MaxPlayerCount>k__BackingField: 2
+  <MaxPlayerCount>k__BackingField: 1

@@ -15,7 +15,8 @@ namespace Core.Runtime.Game.Managers
 
             _gameSystemsHandler = new GameSystemsHandler();
             
-            _gameSystemsHandler.AddGameSystemsForInitAndReset(new CharacterDeterminantSystem());
+            _gameSystemsHandler.AddGameSystemForInitAndReset(new CharacterDeterminantSystem());
+            _gameSystemsHandler.AddGameSystemForInit(new UnitSpawnSystem());
         }
 
         private void Update()

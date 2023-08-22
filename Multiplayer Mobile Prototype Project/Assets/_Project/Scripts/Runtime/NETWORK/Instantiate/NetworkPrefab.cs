@@ -18,7 +18,9 @@ namespace Core.Runtime.NETWORK.Instantiate
         {
             var extensionLenght = System.IO.Path.GetExtension(path).Length;
 
-            var startIndex = path.ToLower().IndexOf("resources", StringComparison.Ordinal);
+            const int additionalLenght = 10;
+
+            var startIndex = path.ToLower().IndexOf("resources", StringComparison.Ordinal) + additionalLenght;
 
             return startIndex == -1
                 ? string.Empty

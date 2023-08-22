@@ -38,7 +38,7 @@ namespace Core.Runtime.Game.Managers
             system.Init();
         }
         
-        public void AddGameSystemsForInitAndReset(IGameSystemForInitAndReset system)
+        public void AddGameSystemForInitAndReset(IGameSystemForInitAndReset system)
         {
             if (_gameSystemsForInitAndReset.Contains(system)) return;
             

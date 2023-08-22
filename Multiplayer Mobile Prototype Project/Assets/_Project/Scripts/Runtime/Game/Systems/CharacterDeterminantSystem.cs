@@ -4,6 +4,7 @@ using System.Linq;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
 using System.Collections.Generic;
+using Core.Runtime.NETWORK;
 
 namespace Core.Runtime.Game.Systems
 {
@@ -15,8 +16,6 @@ namespace Core.Runtime.Game.Systems
 
         private const float _colorDistanceThreshold = .2f;
         private const int _maxAttemptsColor = 10;
-
-        private const byte CHANGE_COLOR_EVENT_CODE = 1;
 
         public void Init()
         {
@@ -46,7 +45,7 @@ namespace Core.Runtime.Game.Systems
 
                 var raiseEventOptions = new RaiseEventOptions { Receivers = ReceiverGroup.All };
 
-                PhotonNetwork.RaiseEvent(CHANGE_COLOR_EVENT_CODE, property,
+                PhotonNetwork.RaiseEvent(NETWORK_EventCode.CHANGE_PLAYER_COLOR_EVENT_CODE, property,
                     raiseEventOptions,
                     SendOptions.SendReliable);
             }
@@ -59,7 +58,7 @@ namespace Core.Runtime.Game.Systems
         
         public void OnEvent(EventData photonEvent)
         {
-            if (photonEvent.Code == CHANGE_COLOR_EVENT_CODE)
+            if (photonEvent.Code == NETWORK_EventCode.CHANGE_PLAYER_COLOR_EVENT_CODE)
             {
                 if (photonEvent.CustomData is not Hashtable data) return;
                 ChangeLocalPlayerColor(data);
@@ -84,10 +83,6 @@ namespace Core.Runtime.Game.Systems
             var colorProperty = new Hashtable { { "Color", colorData } };
 
             PhotonNetwork.LocalPlayer.SetCustomProperties(colorProperty);
-
-            var debugColor = (float[])colorProperty["Color"];
-            
-            Debug.Log($"Setted color for player: ({debugColor[0]}, {debugColor[1]}, {debugColor[2]})");
         }
 
         #region Utilities
