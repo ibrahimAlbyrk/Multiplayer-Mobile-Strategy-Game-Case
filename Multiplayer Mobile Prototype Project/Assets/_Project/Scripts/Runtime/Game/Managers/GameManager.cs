@@ -2,8 +2,8 @@
 
 namespace Core.Runtime.Game.Managers
 {
-    using Singleton;
     using Systems;
+    using Singleton;   
     
     public class GameManager : PunCallbacksSingleton<GameManager>
     {
@@ -16,7 +16,7 @@ namespace Core.Runtime.Game.Managers
             _gameSystemsHandler = new GameSystemsHandler();
             
             _gameSystemsHandler.AddGameSystemForInitAndReset(new CharacterDeterminantSystem());
-            _gameSystemsHandler.AddGameSystemForInit(new UnitSpawnSystem());
+            _gameSystemsHandler.AddGameSystemForInitAndReset(new UnitSpawnSystem());
         }
 
         private void Update()

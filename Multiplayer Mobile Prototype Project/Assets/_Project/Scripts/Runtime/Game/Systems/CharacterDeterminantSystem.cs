@@ -4,10 +4,10 @@ using System.Linq;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
 using System.Collections.Generic;
-using Core.Runtime.NETWORK;
 
 namespace Core.Runtime.Game.Systems
 {
+    using NETWORK;
     using Utilities;
 
     public class CharacterDeterminantSystem : IGameSystemForInitAndReset, IOnEventCallback
@@ -19,9 +19,11 @@ namespace Core.Runtime.Game.Systems
 
         public void Init()
         {
-            var currentRoom = PhotonNetwork.CurrentRoom;
-
             PhotonNetwork.AddCallbackTarget(this);
+            
+            if (!PhotonNetwork.IsMasterClient) return;
+            
+            var currentRoom = PhotonNetwork.CurrentRoom;
 
             if (currentRoom == null) return;
 
@@ -35,18 +37,16 @@ namespace Core.Runtime.Game.Systems
 
                 //Convert Color to float array
                 var colorValues = new[] { color.r, color.g, color.b };
-
+                
                 //Add the color values to the custom properties of the player.
                 var property = new Hashtable
                 {
-                    { "PlayerId", player.UserId },
+                    { "ActorNumber", player.ActorNumber },
                     { "Color", colorValues }
                 };
 
-                var raiseEventOptions = new RaiseEventOptions { Receivers = ReceiverGroup.All };
-
                 PhotonNetwork.RaiseEvent(NETWORK_EventCode.CHANGE_PLAYER_COLOR_EVENT_CODE, property,
-                    raiseEventOptions,
+                    new RaiseEventOptions { Receivers = ReceiverGroup.All },
                     SendOptions.SendReliable);
             }
         }
@@ -61,19 +61,17 @@ namespace Core.Runtime.Game.Systems
             if (photonEvent.Code == NETWORK_EventCode.CHANGE_PLAYER_COLOR_EVENT_CODE)
             {
                 if (photonEvent.CustomData is not Hashtable data) return;
-                ChangeLocalPlayerColor(data);
+                ChangePlayerColor(data);
             }
         }
 
-        private static void ChangeLocalPlayerColor(Hashtable data)
+        private static void ChangePlayerColor(Hashtable data)
         {
-            if (data["PlayerId"] is string playerId)
-            {
-                if (playerId != PhotonNetwork.LocalPlayer.UserId)
-                {
-                    return; //This event is not for us
-                }
-            }
+            if (data["ActorNumber"] is not int actorNumber) return;
+
+            if (!PhotonNetwork.CurrentRoom.Players.ContainsKey(actorNumber)) return;
+
+            var player = PhotonNetwork.CurrentRoom.Players[actorNumber];
 
             var colorData = data["Color"];
 
@@ -82,7 +80,7 @@ namespace Core.Runtime.Game.Systems
             //This client takes new color values from MasterClient and sets them to their CustomProperties.
             var colorProperty = new Hashtable { { "Color", colorData } };
 
-            PhotonNetwork.LocalPlayer.SetCustomProperties(colorProperty);
+            player.SetCustomProperties(colorProperty);
         }
 
         #region Utilities
