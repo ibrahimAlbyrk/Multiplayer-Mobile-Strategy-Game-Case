@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 namespace Core.Runtime.Selection.Managers
@@ -19,7 +18,7 @@ namespace Core.Runtime.Selection.Managers
         private Vector3 _firstMousePos;
         private Vector3 _lastMousePos;
 
-        public IReadOnlyList<Unit> GetSelectedUnits() => _selectedUnits;
+        public IEnumerable<Unit> GetSelectedUnits() => _selectedUnits;
         
         protected override void Awake()
         {
@@ -41,28 +40,6 @@ namespace Core.Runtime.Selection.Managers
             foreach (var selector in _selectors)
             {
                 selector.SelectHandler(_firstMousePos, _lastMousePos);
-            }
-        }
-
-        public void DeSelectAll(IEnumerable<Unit> units)
-        {
-            for (var i = _selectedUnits.Count - 1; i >= 0; i--)
-            {
-                if (!units.Contains(_selectedUnits[i]))
-                {
-                    DeSelectUnit(_selectedUnits[i]);
-                }
-            }
-        }
-
-        public void SelectAll(IEnumerable<Unit> units)
-        {
-            foreach (var unit in units)
-            {
-                if(!_selectedUnits.Contains(unit))
-                    SelectUnit(unit);
-                else
-                    DeSelectUnit(unit);
             }
         }
 
