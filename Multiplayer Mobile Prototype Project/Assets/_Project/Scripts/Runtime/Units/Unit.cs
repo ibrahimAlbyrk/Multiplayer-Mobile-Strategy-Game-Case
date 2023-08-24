@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Core.Runtime.Units
 {
@@ -8,10 +9,13 @@ namespace Core.Runtime.Units
     public abstract class Unit : MonoBehaviourPunCallbacks
     {
         [SerializeField] private Color m_color;
+        [SerializeField] private NavMeshAgent _agent;
 
         private GameObject _selectionCircle;
         
         private bool _isSelected;
+
+        public NavMeshAgent GetAgent() => _agent;
         
         public Color GetColor() => m_color;
 

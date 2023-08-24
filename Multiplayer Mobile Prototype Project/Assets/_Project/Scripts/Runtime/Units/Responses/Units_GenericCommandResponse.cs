@@ -28,9 +28,10 @@ namespace Core.Runtime.Units.Responses
 
                 init?.Invoke(command_obj, new object[] { unit });
 
-                var commands = m_provider.GetCommands(unit);
+                var commandHandler = m_provider.GetCommandHandler(unit);
+                
+                commandHandler.AddCommand(Execute);
 
-                commands.Add(Execute);
                 continue;
 
                 bool Execute()

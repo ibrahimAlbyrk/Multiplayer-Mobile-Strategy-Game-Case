@@ -10,7 +10,7 @@ namespace Core.Runtime.Units.Providers
         /// </summary>
         public override void RunCommands()
         {
-            foreach (var Commands in _CommandHandlers.Select(commandHandler => commandHandler.Commands))
+            foreach (var Commands in m_CommandHandlers.Select(commandHandler => commandHandler.Commands))
             {
                 if (Commands.Count < 1) return;
 
