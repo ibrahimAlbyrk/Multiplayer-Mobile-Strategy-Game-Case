@@ -16,6 +16,11 @@ namespace Core.Runtime.Units.Motors
             
             agent.SetDestination(target.position);
         }
+        
+        public static void HandleMovement(NavMeshAgent agent, Vector3 pos)
+        {
+            agent.SetDestination(pos);
+        }
 
         public static void LookTransform(Transform t1, Transform target)
         {
@@ -29,6 +34,11 @@ namespace Core.Runtime.Units.Motors
         public static bool IsReachTheTarget(Transform t1, Transform t2, float threshold)
         {
             return Vector3.Distance(t1.position, t2.position) <= threshold;
+        }
+        
+        public static bool IsReachTheTarget(Vector3 pos1, Vector3 pos2, float threshold)
+        {
+            return Vector3.Distance(pos1, pos2) <= threshold;
         }
     }
 }

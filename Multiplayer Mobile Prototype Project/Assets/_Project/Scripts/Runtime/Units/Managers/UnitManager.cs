@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 using Random = UnityEngine.Random;
 
 namespace Core.Runtime.Units.Managers
@@ -30,7 +31,7 @@ namespace Core.Runtime.Units.Managers
         #region Get Methods
         
         public IReadOnlyList<Unit> GetUnits() => _units;
-
+        public IReadOnlyList<Unit> GetUnits(Color color) => _units.Where(unit => unit.GetColor() == color).ToList();
         public string GetUnitLayer() => _unitLayer;
         
         #endregion

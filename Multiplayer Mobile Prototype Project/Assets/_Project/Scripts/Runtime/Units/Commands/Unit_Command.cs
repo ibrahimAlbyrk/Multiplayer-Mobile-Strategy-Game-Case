@@ -17,5 +17,6 @@ namespace Core.Runtime.Units.Commands
     }
     
     public abstract class Unit_Transform_Command : Unit_Command<Transform> { }
+    public abstract class Unit_Vector_Command : Unit_Command<VectorCommand> { }
     public abstract class Unit_ResourceCollect_Command : Unit_Command<ResourceCollectible> { }
 }

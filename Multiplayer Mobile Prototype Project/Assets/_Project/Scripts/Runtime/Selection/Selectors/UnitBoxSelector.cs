@@ -114,7 +114,7 @@ namespace Core.Runtime.Selection.Selectors
             return Rect.MinMaxRect(topLeft.x, topLeft.y, bottomRight.x, bottomRight.y);
         }
 
-        private static Bounds GetViewportBounds(Camera camera, Vector3 screenPosition1, Vector3 screenPosition2)
+        private static Bounds GetViewportBounds(UnityEngine.Camera camera, Vector3 screenPosition1, Vector3 screenPosition2)
         {
             if (camera == null) return default;
 

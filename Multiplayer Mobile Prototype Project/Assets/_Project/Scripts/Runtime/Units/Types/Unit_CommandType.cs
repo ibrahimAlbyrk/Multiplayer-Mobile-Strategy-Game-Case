@@ -8,7 +8,8 @@
     /// </summary>
     public enum Unit_CommandType
     {
-        Move,
+        MoveToVector,
+        MoveToTransform,
         ResourceCollect
     }
 }

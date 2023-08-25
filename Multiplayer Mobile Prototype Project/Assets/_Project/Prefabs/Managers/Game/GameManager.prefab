@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDontDestroy: 0
+  _cameraController: {fileID: 3027965192366471387, guid: ca691afb299646947b26e721ac18fe27, type: 3}

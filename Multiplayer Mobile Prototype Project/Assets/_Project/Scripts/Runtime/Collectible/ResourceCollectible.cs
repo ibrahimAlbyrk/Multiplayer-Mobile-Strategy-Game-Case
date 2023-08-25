@@ -14,7 +14,7 @@ namespace Core.Runtime.Collectible
             if (!isMultiple)
                 UnitManager.Instance.ResetCommands();
             
-            UnitManager.Instance.SendCommandToSelectedUnits(Unit_CommandType.Move, transform);
+            UnitManager.Instance.SendCommandToSelectedUnits(Unit_CommandType.MoveToTransform, transform);
             UnitManager.Instance.SendCommandToSelectedUnits(Unit_CommandType.ResourceCollect, this);
         }
     }

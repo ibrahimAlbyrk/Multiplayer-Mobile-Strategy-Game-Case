@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using Core.Runtime.NETWORK;
-using Photon.Pun;
 
 namespace Core.Runtime.Selection.Managers
 {
@@ -29,7 +27,7 @@ namespace Core.Runtime.Selection.Managers
             _selectors = GetComponents<Selector>();
             
             foreach (var selector in _selectors)
-                selector.Init(Camera.main);
+                selector.Init(UnityEngine.Camera.main);
         }
 
         private void Update()

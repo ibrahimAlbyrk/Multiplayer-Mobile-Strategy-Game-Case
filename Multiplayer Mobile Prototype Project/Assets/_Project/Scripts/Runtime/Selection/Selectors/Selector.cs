@@ -11,9 +11,9 @@ namespace Core.Runtime.Selection.Selectors
         protected Vector3 m_firsMousePos;
         protected Vector3 m_lastMousePos;
 
-        protected Camera m_cam;
+        protected UnityEngine.Camera m_cam;
 
-        public void Init(Camera cam)
+        public void Init(UnityEngine.Camera cam)
         {
             m_cam = cam;
         }
