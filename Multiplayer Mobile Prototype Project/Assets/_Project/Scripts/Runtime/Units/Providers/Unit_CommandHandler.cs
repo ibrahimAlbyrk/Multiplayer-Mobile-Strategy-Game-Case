@@ -1,15 +1,16 @@
 ﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 
 namespace Core.Runtime.Units.Providers
 {
-    public class Unit_CommandHandler
+    public class Unit_CommandHandler : MonoBehaviour
     {
-        public readonly Unit Unit;
+        public Unit Unit;
 
-        public readonly List<Func<bool>> Commands;
+        public List<Func<bool>> Commands;
 
-        public Unit_CommandHandler(Unit unit)
+        public void Init(Unit unit)
         {
             Unit = unit;
             Commands = new List<Func<bool>>();

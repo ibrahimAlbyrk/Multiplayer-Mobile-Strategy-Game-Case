@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using Core.Runtime.NETWORK;
+using Photon.Pun;
 
 namespace Core.Runtime.Selection.Managers
 {

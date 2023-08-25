@@ -12,13 +12,13 @@ namespace Core.Runtime.Units.Providers
         {
             foreach (var Commands in m_CommandHandlers.Select(commandHandler => commandHandler.Commands))
             {
-                if (Commands.Count < 1) return;
+                if (Commands.Count < 1) continue;
 
                 var task = Commands[0];
 
                 var isCompleted = task.Invoke();
 
-                if (!isCompleted) return;
+                if (!isCompleted) continue;
 
                 Commands.RemoveAt(0);
             }

@@ -19,8 +19,10 @@ namespace Core.Runtime.Units.Responses
             {
                 //TODO: will be changed for later
 
-                var command = Type.GetType("Core.Runtime.Units.Commands.Unit" +
-                                           $"{commandType}Command")!;
+                var command = Type.GetType($"Core.Runtime.Units.Commands.Unit_{commandType}Command")!;
+
+                if (command == null)
+                    throw new ArgumentNullException($"Generic Command Response", "Command Type is null");
 
                 var command_obj = Activator.CreateInstance(command);
 

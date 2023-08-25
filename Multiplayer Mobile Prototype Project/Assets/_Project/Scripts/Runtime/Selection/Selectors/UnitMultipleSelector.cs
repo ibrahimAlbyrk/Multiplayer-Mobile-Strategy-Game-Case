@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Core.Runtime.NETWORK;
 using Core.Runtime.Units.Managers;
 
 namespace Core.Runtime.Selection.Selectors
@@ -59,10 +60,14 @@ namespace Core.Runtime.Selection.Selectors
 
             if (!Physics.Raycast(ray, out var hit, Mathf.Infinity, LayerMask.GetMask(unitLayerName)))
                 return Enumerable.Empty<Unit>();
+
+            if (!hit.collider.TryGetComponent(out Unit unit))
+                return Enumerable.Empty<Unit>();
             
-            return !hit.collider.TryGetComponent(out Unit unit)
-                ? Enumerable.Empty<Unit>()
-                : new[] { unit };
+            if (unit.GetColor() != LocalPlayer.GetColor())
+                return Enumerable.Empty<Unit>();;
+
+            return new[] { unit };
         }
     }
 }

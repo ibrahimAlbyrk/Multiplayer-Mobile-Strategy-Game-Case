@@ -3,12 +3,13 @@ using UnityEngine;
 
 namespace Core.Runtime.NETWORK.Instantiate
 {
-    public struct NetworkPrefab
+    [Serializable]
+    public class NetworkPrefab
     {
-        public readonly GameObject Prefab;
-        public readonly string Path;
+        public GameObject Prefab;
+        public string Path;
 
-        public NetworkPrefab(GameObject prefab, string path) : this()
+        public NetworkPrefab(GameObject prefab, string path)
         {
             Prefab = prefab;
             Path = GetModifiedPath(path);

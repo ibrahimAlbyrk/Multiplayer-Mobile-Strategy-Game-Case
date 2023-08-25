@@ -1,11 +1,9 @@
-﻿using UnityEngine;
-
-namespace Core.Runtime.Units.Responses
+﻿namespace Core.Runtime.Units.Responses
 {
     using Types;
     using Providers;
     
-    public class Units_CommandResponse : MonoBehaviour
+    public class Units_CommandResponse
     {
         protected Units_CommandProvider m_provider;
 

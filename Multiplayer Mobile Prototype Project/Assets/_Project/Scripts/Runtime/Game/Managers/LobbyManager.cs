@@ -1,7 +1,10 @@
-﻿using Photon.Pun;
+﻿using System;
+using Photon.Pun;
 using UnityEngine;
 using Photon.Realtime;
 using System.Collections;
+using Core.Runtime.NETWORK;
+using ExitGames.Client.Photon;
 
 namespace Core.Runtime.Game.Managers
 {
@@ -11,7 +14,11 @@ namespace Core.Runtime.Game.Managers
     
     public class LobbyManager : PunCallbacksSingleton<LobbyManager>
     {
+        public static event Action OnRoomStarted;
+        
         private Coroutine _startGameCoroutine;
+        
+        private readonly RaiseEventOptions eventOptions = new() { Receivers = ReceiverGroup.All };
         
         #region Pun Callbacks
 
@@ -53,7 +60,15 @@ namespace Core.Runtime.Game.Managers
             //start the game if the room is full
             if (isRoomFull)
             {
-                _startGameCoroutine ??= StartCoroutine(StartGame_Cor());
+                if (_startGameCoroutine == null)
+                {
+                    PhotonNetwork.RaiseEvent(NETWORK_EventCode.SEND_ROOM_STATE_EVENT_CODE,
+                        true,
+                        eventOptions,
+                        SendOptions.SendReliable);
+                    
+                    _startGameCoroutine = StartCoroutine(StartGame_Cor());   
+                }
                 return;
             }
             
@@ -62,6 +77,11 @@ namespace Core.Runtime.Game.Managers
             
             StopCoroutine(_startGameCoroutine);
             _startGameCoroutine = null;
+            
+            PhotonNetwork.RaiseEvent(NETWORK_EventCode.SEND_ROOM_STATE_EVENT_CODE,
+                false,
+                eventOptions,
+                SendOptions.SendReliable);
         }
 
         private IEnumerator StartGame_Cor()
@@ -71,7 +91,7 @@ namespace Core.Runtime.Game.Managers
             
             NETWORK_SceneLoader.LoadScene("Game_Scene");
             
-            //TODO: Start the game
+            OnRoomStarted?.Invoke();
         }
     }
 }

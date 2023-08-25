@@ -1,8 +1,10 @@
-﻿using Core.Runtime.Commands;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Core.Runtime.Units.Commands
 {
+    using Collectible;
+    using Core.Runtime.Commands;
+    
     [System.Serializable]
     public abstract class Unit_Command<T> : Command<Transform, T> where T : class
     {
@@ -15,4 +17,5 @@ namespace Core.Runtime.Units.Commands
     }
     
     public abstract class Unit_Transform_Command : Unit_Command<Transform> { }
+    public abstract class Unit_ResourceCollect_Command : Unit_Command<ResourceCollectible> { }
 }

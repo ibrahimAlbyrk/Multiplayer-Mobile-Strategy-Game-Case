@@ -9,6 +9,6 @@
     public enum Unit_CommandType
     {
         Move,
-        Collect
+        ResourceCollect
     }
 }

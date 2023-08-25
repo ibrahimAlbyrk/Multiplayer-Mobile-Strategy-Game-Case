@@ -14,7 +14,7 @@ namespace Core.Runtime.Game.Systems
     {
         private readonly List<Color> _playerColors = new();
 
-        private const float _colorDistanceThreshold = .2f;
+        private const float _colorSimilarityThreshold = .2f;
         private const int _maxAttemptsColor = 10;
 
         public void Init()
@@ -81,6 +81,9 @@ namespace Core.Runtime.Game.Systems
             var colorProperty = new Hashtable { { "Color", colorData } };
 
             player.SetCustomProperties(colorProperty);
+            
+            if(player.IsLocal)
+                LocalPlayer.SetColor((float[])colorData);
         }
 
         #region Utilities
@@ -102,7 +105,7 @@ namespace Core.Runtime.Game.Systems
         private bool IsColorUnique(Color color)
         {
             return _playerColors
-                .All(existingColor => !(ColorUtilities.ColorDistance(color, existingColor) < _colorDistanceThreshold));
+                .All(existingColor => !(ColorUtilities.ColorSimilarity(color, existingColor) < _colorSimilarityThreshold));
         }
 
         #endregion

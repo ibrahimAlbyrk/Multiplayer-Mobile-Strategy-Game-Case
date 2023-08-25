@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
+using Core.Runtime.NETWORK;
 using Core.Runtime.Selection.Managers;
 
 namespace Core.Runtime.Selection.Selectors
@@ -71,9 +72,11 @@ namespace Core.Runtime.Selection.Selectors
             {
                 var unit = UnitManager.Instance.GetUnits()[i];
 
-                var isSelected = IsWithinSelectionBounds(unit.gameObject);
+                var isSelectable = IsWithinSelectionBounds(unit.gameObject);
                 
-                if(!isSelected) continue;
+                if(!isSelectable) continue;
+                
+                if (unit.GetColor() != LocalPlayer.GetColor()) continue;
 
                 selectedUnits.Add(unit);
             }

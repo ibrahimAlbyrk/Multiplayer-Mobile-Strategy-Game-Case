@@ -1,17 +1,26 @@
 ﻿using Photon.Pun;
 using System.Linq;
 using UnityEngine;
-using System.Collections.Generic;
 
 namespace Core.Runtime.NETWORK.Instantiate
 {
     public class NetworkInstantiater
     {
-        private static readonly List<NetworkPrefab> _networkPrefabs = new();
+        private static NetworkInstantData _networkInstantData;
+
+        public static NetworkInstantData NetworkInstantData
+        {
+            get
+            {
+                if(_networkInstantData == null)
+                    _networkInstantData = Resources.Load<NetworkInstantData>("Data/NetworkInstantData");
+                return _networkInstantData;
+            }
+        }
         
         public static GameObject Instantiate(GameObject obj, Vector3 position = default, Quaternion rotation = default, Transform parent = default)
         {
-            foreach (var instantObj in from networkPrefab in _networkPrefabs
+            foreach (var instantObj in from networkPrefab in NetworkInstantData.NetworkPrefabs
                      where networkPrefab.Prefab == obj
                      where networkPrefab.Path != string.Empty
                      select PhotonNetwork.Instantiate(networkPrefab.Path, position, rotation))
@@ -27,7 +36,7 @@ namespace Core.Runtime.NETWORK.Instantiate
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         public static void LoadNetworkPrefabs()
         {
-            _networkPrefabs.Clear();
+            NetworkInstantData.NetworkPrefabs?.Clear();
             
             var prefabs = Resources.LoadAll<GameObject>("");
 
@@ -39,7 +48,7 @@ namespace Core.Runtime.NETWORK.Instantiate
 
                 var networkPrefab = new NetworkPrefab(prefab, path);
                 
-                _networkPrefabs.Add(networkPrefab);
+                NetworkInstantData.NetworkPrefabs?.Add(networkPrefab);
             }
         }
         #endif

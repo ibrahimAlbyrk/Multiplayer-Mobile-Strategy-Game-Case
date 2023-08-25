@@ -10,9 +10,14 @@ namespace Core.Runtime.Units.Commands
         {
             var agent = _unit.GetAgent();
 
-            agent.SetDestination(obj2.position);
+            agent.isStopped = false;
             
-            var isCompleted = Unit_MovementMotor.IsReachTheTarget(obj1, obj2, agent.speed);
+            Unit_LocomotionMotor.HandleMovement(agent, obj2);
+            
+            var isCompleted = Unit_LocomotionMotor.IsReachTheTarget(obj1, obj2, agent.speed / 2);
+
+            if (isCompleted)
+                agent.isStopped = true;
             
             return isCompleted;
         }
