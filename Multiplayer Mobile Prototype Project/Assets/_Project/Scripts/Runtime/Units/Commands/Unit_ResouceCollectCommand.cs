@@ -10,19 +10,19 @@ namespace Core.Runtime.Units.Commands
         private const float _CollectCountDown = .5f;
         private float _timer;
         
-        public override bool Execute(Transform obj1, ResourceCollectible obj2)
+        public override bool Execute(Transform obj1, ResourceCollectible collectible)
         {
-            Unit_LocomotionMotor.LookTransform(obj1, obj2.transform);
+            Unit_LocomotionMotor.LookTransform(obj1, collectible.transform);
             
             if (_timer >= _CollectCountDown)
             {
-                obj2.ResourceAmount--;
+                collectible.ResourceAmount--;
                 _timer = 0f;
             }
             else
                 _timer += Time.fixedDeltaTime;
             
-            var isCompleted = obj2.ResourceAmount < 1;
+            var isCompleted = collectible.ResourceAmount < 1;
 
             return isCompleted;
         }

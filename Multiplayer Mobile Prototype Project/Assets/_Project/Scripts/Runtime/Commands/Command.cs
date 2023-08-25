@@ -7,7 +7,7 @@
 
     public abstract class Command<T1, T2> where T1 : class where T2 : class
     {
-        public abstract bool Execute(T1 obj1, T2 obj2);
+        public abstract bool Execute(T1 obj1, T2 collectible);
     }
 
     public abstract class Command<T1, T2, T3> where T1 : class where T2 : class where T3 : class

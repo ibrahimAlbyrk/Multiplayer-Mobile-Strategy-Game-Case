@@ -6,15 +6,15 @@ namespace Core.Runtime.Units.Commands
     
     public class Unit_MoveToTransformCommand : Unit_Transform_Command
     {
-        public override bool Execute(Transform obj1, Transform obj2)
+        public override bool Execute(Transform obj1, Transform collectible)
         {
             var agent = _unit.GetAgent();
 
             agent.isStopped = false;
             
-            Unit_LocomotionMotor.HandleMovement(agent, obj2);
+            Unit_LocomotionMotor.HandleMovement(agent, collectible);
             
-            var isCompleted = Unit_LocomotionMotor.IsReachTheTarget(obj1, obj2, agent.speed / 2);
+            var isCompleted = Unit_LocomotionMotor.IsReachTheTarget(obj1, collectible, agent.speed / 2);
 
             if (isCompleted)
                 agent.isStopped = true;
