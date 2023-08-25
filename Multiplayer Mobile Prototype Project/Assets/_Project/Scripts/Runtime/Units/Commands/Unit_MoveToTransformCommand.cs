@@ -19,6 +19,8 @@ namespace Core.Runtime.Units.Commands
             if (isCompleted)
                 agent.isStopped = true;
             
+            _unit.GetAnimator().SetBool("Moving", !isCompleted);
+            
             return isCompleted;
         }
     }

@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Core.Runtime.Units
+﻿namespace Core.Runtime.Units
 {
     public class WorkerUnit : Unit
     {

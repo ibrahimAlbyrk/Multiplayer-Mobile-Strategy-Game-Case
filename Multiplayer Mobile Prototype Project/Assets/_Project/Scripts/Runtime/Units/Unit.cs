@@ -8,13 +8,17 @@ namespace Core.Runtime.Units
     
     public abstract class Unit : MonoBehaviourPunCallbacks
     {
-        [SerializeField] private Color m_color;
-        [SerializeField] private NavMeshAgent _agent;
+        [SerializeField] protected Color m_color;
+        [SerializeField] protected NavMeshAgent _agent;
+
+        [SerializeField] protected Animator _animator;
 
         private GameObject _selectionCircle;
         
         private bool _isSelected;
 
+        public Animator GetAnimator() => _animator;
+        
         public NavMeshAgent GetAgent() => _agent;
         
         public Color GetColor() => m_color;

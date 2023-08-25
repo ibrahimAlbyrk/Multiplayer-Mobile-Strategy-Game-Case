@@ -23,6 +23,8 @@ namespace Core.Runtime.Units.Commands
                 _timer += Time.fixedDeltaTime;
             
             var isCompleted = collectible.ResourceAmount < 1;
+            
+            _unit.GetAnimator().SetBool("Working", !isCompleted);
 
             return isCompleted;
         }
