@@ -39923,10 +39923,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Matchamking_Panel
       objectReference: {fileID: 0}
-    - target: {fileID: 1459256908209435048, guid: 2750cf50af5f542759527efebdc77d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3477945512154302789, guid: 2750cf50af5f542759527efebdc77d0c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
