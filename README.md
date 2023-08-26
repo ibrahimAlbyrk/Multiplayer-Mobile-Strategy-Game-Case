@@ -47,6 +47,11 @@ Navigate the camera using the W-A-S-D keys.
 - The command system has been developed to be adaptable for every object and mechanism. It can send and process various types of variables.
 - The main goal here is to create a user-friendly and easily applicable command system, free from the complexity typically associated with command systems.
 - Commands are created with desired variables, processed and executed through providers and responders.
+- In this project, the command system has been designed as a generic system where multiple commands can be sent and processed sequentially.
+- Players can send as many commands as they want to units.
+- For example;
+  - If the Shift key is held down and multiple locations are clicked, the units will move to each of them sequentially.
+  - If clicked without holding down the Shift key, it cancels other commands and sends a new command.
 
 ## Gameplay Video
 Click on the image to watch the video.
