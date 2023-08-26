@@ -40,7 +40,7 @@ Navigate the camera using the W-A-S-D keys.
 - The game system has several interfaces that determine the functions of the game systems.
 - These functions regulate the manageability and usability of the game systems.
 
-## Game Manager
+### Game Manager
 - The game manager is the fundamental controller that creates, manages, and operates game systems.
 
 ### Command System
