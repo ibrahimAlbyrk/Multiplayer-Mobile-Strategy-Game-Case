@@ -11,6 +11,7 @@ namespace Core.Runtime.Units
         [SerializeField] protected Color m_color;
         [SerializeField] protected NavMeshAgent _agent;
 
+        [SerializeField] private Renderer _renderer;
         [SerializeField] protected Animator _animator;
 
         private GameObject _selectionCircle;
@@ -33,6 +34,8 @@ namespace Core.Runtime.Units
         protected void RPC_SetColor(float r, float g, float b)
         {
             m_color = new Color(r, g, b);
+            
+            _renderer.materials[0].SetColor($"_Color", m_color);
         }
 
         public void SetSelection(bool selected, GameObject selectionCirclePrefab)

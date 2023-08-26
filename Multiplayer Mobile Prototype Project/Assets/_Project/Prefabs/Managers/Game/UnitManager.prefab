@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isDontDestroy: 0
   _unitLayer: Selectible
-  _unitPrefab: {fileID: 5059046533114783402, guid: 77fd5200e715a2a4e8196c743a9531c2, type: 3}
+  _unitPrefab: {fileID: 8590376479198664688, guid: 77fd5200e715a2a4e8196c743a9531c2, type: 3}
   _commandProviderType: 0
   _commandResponseType: 0

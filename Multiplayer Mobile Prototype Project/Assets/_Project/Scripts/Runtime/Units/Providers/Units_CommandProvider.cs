@@ -13,6 +13,9 @@ namespace Core.Runtime.Units.Providers
             var commandHandler = GetCommandHandler(unit);
 
             commandHandler.Commands = new List<Func<bool>>();
+            
+            commandHandler.ResetCommands.ForEach(cmd => cmd?.Invoke());
+            commandHandler.ResetCommands = new List<Action>();
         }
         
         public void AddCommandHandler(Unit unit)

@@ -4,6 +4,7 @@ using System.Linq;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
 using System.Collections.Generic;
+using Core.Runtime.Game.Managers;
 
 namespace Core.Runtime.Game.Systems
 {
@@ -14,7 +15,7 @@ namespace Core.Runtime.Game.Systems
     {
         private readonly List<Color> _playerColors = new();
 
-        private const float _colorSimilarityThreshold = .2f;
+        private const float _colorSimilarityThreshold = 1f;
         private const int _maxAttemptsColor = 10;
 
         public void Init()
@@ -81,9 +82,11 @@ namespace Core.Runtime.Game.Systems
             var colorProperty = new Hashtable { { "Color", colorData } };
 
             player.SetCustomProperties(colorProperty);
+
+            if (!player.IsLocal) return;
             
-            if(player.IsLocal)
-                LocalPlayer.SetColor((float[])colorData);
+            LocalPlayer.SetColor((float[])colorData);
+            GameManager.Instance.SetMyColor((float[])colorData);
         }
 
         #region Utilities

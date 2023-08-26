@@ -33,6 +33,8 @@ namespace Core.Runtime.Units.Motors
 
         public static bool IsReachTheTarget(Transform t1, Transform t2, float threshold)
         {
+            if (t1 == null || t2 == null) return true;
+            
             return Vector3.Distance(t1.position, t2.position) <= threshold;
         }
         

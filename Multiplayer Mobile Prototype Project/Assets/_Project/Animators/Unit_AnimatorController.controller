@@ -38,7 +38,8 @@ AnimatorState:
   m_Transitions:
   - {fileID: -663946482194746199}
   - {fileID: -667691726356106229}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 1125576983543030912}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -171,6 +172,34 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!114 &1125576983543030912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f3916ee3431b8034f950ec0bacff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _events:
+  - Name: Collect
+    Frame: 25
+--- !u!114 &1301234452825729327
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f3916ee3431b8034f950ec0bacff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _events: []
 --- !u!1107 &2569872797740338337
 AnimatorStateMachine:
   serializedVersion: 6

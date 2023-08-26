@@ -11,7 +11,9 @@ namespace Core.Runtime.Units.Responses
         /// parameter is added to the tasks. If the tasks are
         /// not working, the tasks will be initiated.
         /// </summary>
-        /// /// <param name="commandObject"></param>
+        /// ///
+        /// <param name="unit"></param>
+        /// <param name="commandObject"></param>
         /// <param name="commandTypes"></param>
         public override void SendCommand(Unit unit, object commandObject, params Unit_CommandType[] commandTypes)
         {
@@ -33,6 +35,7 @@ namespace Core.Runtime.Units.Responses
                 var commandHandler = m_provider.GetCommandHandler(unit);
                 
                 commandHandler.AddCommand(Execute);
+                commandHandler.AddResetCommand(End);
 
                 continue;
 
@@ -43,6 +46,11 @@ namespace Core.Runtime.Units.Responses
 
                     return isCompleted;
                 }
+                
+                void End()
+                {
+                    command.GetMethod("End")?.Invoke(command_obj, default);
+                }
             }
         }
 
@@ -51,6 +59,7 @@ namespace Core.Runtime.Units.Responses
         /// parameter is added to the tasks. If the tasks are
         /// not working, the tasks will be initiated.
         /// </summary>
+        /// <param name="unit"></param>
         /// <param name="commandType"></param>
         /// <param name="commandObject"></param>
         public override void SendCommand(Unit unit, Unit_CommandType commandType, object commandObject)
